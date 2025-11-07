@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasad Pagade | AI Engineer & ML Architect</title>
+    <title>Your Name | UI/UX & Web Designer</title>
     <style>
         * {
             margin: 0;
@@ -793,14 +793,13 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="status-badge">Available for Opportunities</div>
-            <h1>Prasad Pagade</h1>
-            <p class="title">Head of Data, Analytics & AI Innovation</p>
-            <p class="location">Westminster, Colorado | 15+ Years Experience</p>
+            <h1>Your Name</h1>
+            <p class="title">UI/UX & Web Designer</p>
+            <p class="location">Example City, Country | Designer Portfolio</p>
             <p class="description">
-                Technology leader bridging client-facing systems, analytics platforms, and AI innovation. 
-                Former Head of Data at Fortune 10 McKesson and Lead at Google/Looker. Proven track record 
-                delivering millions in revenue impact, scaling enterprise platforms, and building teams that 
-                transform industries through intelligent systems.
+                Creative designer focused on expressive, accessible interfaces and polished web experiences.
+                I build eye-catching, high-performance sites and prototypes that highlight UX strategy
+                and visual design. This portfolio shows selected projects, case studies, and demos.
             </p>
             <div class="cta-buttons">
                 <a href="#about" class="btn btn-primary">Watch My Story</a>
@@ -815,7 +814,7 @@
             <p class="section-subtitle">My journey from Mumbai to leading AI innovation</p>
             
             <div class="about-video">
-                <!-- PRASAD: Add your video here! 
+                <!-- Add your video here! 
                      YouTube: <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
                      Loom: <iframe src="https://www.loom.com/embed/YOUR_LOOM_ID" allowfullscreen></iframe> -->
                 <div class="video-placeholder-about">
@@ -958,7 +957,7 @@
                             <span class="tech-tag">Multi-Agent</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/prasadpagade/AI-Agent-Swarm-Architecture-and-Enablement" class="action-btn primary" target="_blank">
+                            <a href="https://github.com/example/your-project" class="action-btn primary" target="_blank">
                                 <span>View Code</span>
                             </a>
                             <a href="#contact" class="action-btn"><span>Live Demo</span></a>
@@ -988,7 +987,7 @@
                             <span class="tech-tag">Real-Time</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/prasadpagade/two_peaks_ai_control_room" class="action-btn primary" target="_blank">
+                            <a href="https://github.com/example/your-project-2" class="action-btn primary" target="_blank">
                                 <span>View Code</span>
                             </a>
                             <a href="#contact" class="action-btn"><span>Case Study</span></a>
@@ -1136,13 +1135,13 @@
                 Let's explore how we can work together to drive innovation.
             </p>
             <div class="contact-links">
-                <a href="https://github.com/prasadpagade" class="contact-link" target="_blank">
+                <a href="https://github.com/example" class="contact-link" target="_blank">
                     <span>GitHub</span>
                 </a>
-                <a href="https://linkedin.com/in/prasadpagade" class="contact-link" target="_blank">
+                <a href="https://linkedin.com/in/example" class="contact-link" target="_blank">
                     <span>LinkedIn</span>
                 </a>
-                <a href="mailto:prasad.pagade@gmail.com" class="contact-link">
+                <a href="mailto:example@example.com" class="contact-link">
                     <span>Email</span>
                 </a>
             </div>
@@ -1150,7 +1149,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Prasad Pagade | AI Engineer & Data Leader</p>
+    <p>&copy; 2025 Your Name | UI/UX & Web Designer</p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built for Innovation, Designed for Impact</p>
     </footer>
 

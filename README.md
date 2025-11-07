@@ -1,9 +1,9 @@
-# 🚀 Prasad Pagade - Professional AI & Data Engineering Portfolio
+# 🚀 Your Name - Professional UI/UX & Web Design Portfolio
 
 > **"Building intelligent systems that don't just work—they think."**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-gold?style=for-the-badge)](https://rohimayaventures.github.io/pp_portfolio_website_epic/)
-[![Version](https://img.shields.io/badge/Version-3.5-olive?style=for-the-badge)](https://github.com/rohimayaventures/pp_portfolio_website_epic)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-gold?style=for-the-badge)](https://example.com/)
+[![Version](https://img.shields.io/badge/Version-1.0-olive?style=for-the-badge)](https://github.com/example/your-portfolio)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 ---
@@ -64,14 +64,14 @@ Colors:
 ## 🚀 Quick Start
 
 ### **View Live Site**
-**https://rohimayaventures.github.io/pp_portfolio_website_epic/**
+**https://example.com/**
 
 ### **Deploy Your Own (5 minutes)**
 
 1. **Fork or clone this repo**
 ```bash
-git clone https://github.com/rohimayaventures/pp_portfolio_website_epic.git
-cd pp_portfolio_website_epic
+git clone https://github.com/example/your-portfolio.git
+cd your-portfolio
 ```
 
 2. **Customize content** (see sections below)
@@ -249,11 +249,11 @@ Open `index.html` and find this section (around line 420):
 
 | Find | Replace With |
 |------|-------------|
-| `Prasad Pagade` | Your Name |
-| `Westminster, Colorado` | Your Location |
-| `prasad.pagade@gmail.com` | Your Email |
-| `linkedin.com/in/prasadpagade` | Your LinkedIn |
-| `github.com/prasadpagade` | Your GitHub |
+| `Your Name` | Your Name |
+| `Your Location` | Your Location |
+| `your.email@example.com` | Your Email |
+| `linkedin.com/in/yourprofile` | Your LinkedIn |
+| `github.com/yourusername` | Your GitHub |
 
 ### **2. Experience Timeline**
 
@@ -364,9 +364,9 @@ The CSS is already included!
 <!-- Add anywhere in your content -->
 <div class="testimonial-snippet">
     <blockquote>
-        "Prasad transformed our data infrastructure, delivering $7.7M in measurable impact."
+        "This designer brought clarity to our product with strong UX and visual polish."
     </blockquote>
-    <cite>— Director of Analytics, Fortune 10 Company</cite>
+    <cite>— Product Lead, Example Company</cite>
 </div>
 ```
 
@@ -697,7 +697,7 @@ Unlike typical portfolio templates:
 
 ### **Your Portfolio Awaits**
 
-[⭐ Star This Repo](https://github.com/rohimayaventures/pp_portfolio_website_epic) • [🐛 Report Bug](https://github.com/rohimayaventures/pp_portfolio_website_epic/issues) • [💡 Request Feature](https://github.com/rohimayaventures/pp_portfolio_website_epic/issues)
+[⭐ Star This Repo](https://github.com/example/your-portfolio) • [🐛 Report Bug](https://github.com/example/your-portfolio/issues) • [💡 Request Feature](https://github.com/example/your-portfolio/issues)
 
 ---
 
@@ -716,9 +716,9 @@ Unlike typical portfolio templates:
 *Version: 3.5*  
 *Status: Production Ready* ✅
 
-**Made with 🧡 by [Rohimaya Ventures](https://github.com/rohimayaventures)**
+**Made with 🧡 by You**
 
-**Where the Phoenix Rises and the Peacock Dances** 🔥🦚
+**Replace this line with your own studio or personal credit**
 
 </div>
 

@@ -244,7 +244,7 @@ enhanced_js = """
                 document.head.appendChild(style);
                 
                 setTimeout(() => {
-                    alert('🎉 You found the secret! Prasad appreciates attention to detail. Let\\'s talk!');
+                    alert('🎉 You found the secret! Enjoy the surprise.');
                 }, 500);
             }
         });

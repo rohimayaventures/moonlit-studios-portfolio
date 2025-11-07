@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "🔥 ENHANCING PRASAD'S PORTFOLIO..."
+echo "🔥 ENHANCING PORTFOLIO..."
 
 # Backup
 cp index.html index.html.backup
@@ -253,7 +253,7 @@ enhanced_js = """
                 document.head.appendChild(style);
                 
                 setTimeout(() => {
-                    alert('🎉 You found the secret! Prasad appreciates attention to detail. Let\\'s talk!');
+                    alert('🎉 You found the secret! Enjoy the surprise.');
                 }, 500);
             }
         });
