@@ -1,0 +1,95 @@
+/* ========================================
+   PEACOCK THEME EFFECTS
+   ======================================== */
+
+/* Peacock Feather Gradient */
+.peacock-gradient {
+    background: linear-gradient(
+        135deg,
+        #4A9B9B 0%,
+        #6B4E71 25%,
+        #FFD700 50%,
+        #4A9B9B 75%,
+        #1B4965 100%
+    );
+    background-size: 300% 300%;
+    animation: shimmer 8s ease infinite;
+}
+
+/* Peacock Button Effect */
+.peacock-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.peacock-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.peacock-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Peacock Feather Decoration */
+.peacock-feather {
+    display: inline-block;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Peacock Color Accents */
+.peacock-accent {
+    border-left: 4px solid var(--mermaid-teal);
+    padding-left: 1.5rem;
+}
+
+/* Peacock Glow Effect */
+.peacock-glow {
+    box-shadow: 0 0 20px rgba(74, 155, 155, 0.4),
+                0 0 40px rgba(107, 78, 113, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.peacock-glow:hover {
+    box-shadow: 0 0 30px rgba(74, 155, 155, 0.6),
+                0 0 60px rgba(107, 78, 113, 0.3),
+                0 0 90px rgba(255, 215, 0, 0.2);
+}
+
+/* Peacock Border Animation */
+@keyframes peacockBorder {
+    0% {
+        border-color: var(--mermaid-teal);
+    }
+    33% {
+        border-color: var(--twilight-purple);
+    }
+    66% {
+        border-color: var(--lunar-gold);
+    }
+    100% {
+        border-color: var(--mermaid-teal);
+    }
+}
+
+.peacock-border {
+    border: 3px solid var(--mermaid-teal);
+    animation: peacockBorder 5s ease infinite;
+}
+
+/* Peacock Text Shadow */
+.peacock-text {
+    text-shadow: 
+        0 0 10px rgba(74, 155, 155, 0.5),
+        0 0 20px rgba(107, 78, 113, 0.3),
+        0 0 30px rgba(255, 215, 0, 0.2);
+}
