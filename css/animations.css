@@ -109,7 +109,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, var(--lunar-gold), var(--mermaid-teal));
+    background: linear-gradient(135deg, var(--gold), var(--olive));
     color: white;
     padding: 3rem;
     border-radius: 20px;
@@ -151,7 +151,7 @@
     left: 0;
     width: 0%;
     height: 4px;
-    background: linear-gradient(90deg, var(--lunar-gold), var(--mermaid-teal));
+    background: linear-gradient(90deg, var(--gold), var(--olive));
     z-index: 9999;
     transition: width 0.1s ease;
 }
@@ -170,10 +170,10 @@
 .gradient-animate {
     background: linear-gradient(
         90deg,
-        var(--lunar-gold),
-        var(--mermaid-teal),
-        var(--twilight-purple),
-        var(--lunar-gold)
+        var(--gold),
+        var(--olive),
+        var(--olive),
+        var(--gold)
     );
     background-size: 300% 300%;
     -webkit-background-clip: text;

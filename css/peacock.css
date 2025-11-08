@@ -48,7 +48,7 @@
 
 /* Peacock Color Accents */
 .peacock-accent {
-    border-left: 4px solid var(--mermaid-teal);
+    border-left: 4px solid var(--olive);
     padding-left: 1.5rem;
 }
 
@@ -68,21 +68,21 @@
 /* Peacock Border Animation */
 @keyframes peacockBorder {
     0% {
-        border-color: var(--mermaid-teal);
+        border-color: var(--olive);
     }
     33% {
-        border-color: var(--twilight-purple);
+        border-color: var(--olive);
     }
     66% {
-        border-color: var(--lunar-gold);
+        border-color: var(--gold);
     }
     100% {
-        border-color: var(--mermaid-teal);
+        border-color: var(--olive);
     }
 }
 
 .peacock-border {
-    border: 3px solid var(--mermaid-teal);
+    border: 3px solid var(--olive);
     animation: peacockBorder 5s ease infinite;
 }
 
