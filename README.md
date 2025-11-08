@@ -40,7 +40,8 @@ Moonlit Studios showcases Hannah's unique combination of healthcare domain exper
 [https://moonlit-studios-portfolio.pages.dev](https://moonlit-studios-portfolio.pages.dev)
 
 ## 📧 Contact
-- **Email:** hannah.pagade@gmail.com
+- **Email:** hello@moonlstudios.com
+- **Website:** https://moonlstudios.com
 - **LinkedIn:** [linkedin.com/in/hannah-pagade](https://www.linkedin.com/in/hannah-pagade)
 - **Location:** Westminster, Colorado
 - **Status:** Accepting new projects

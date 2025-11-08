@@ -323,7 +323,7 @@ function initContactForm() {
             
         } catch (error) {
             // Show error message
-            statusDiv.textContent = '✗ Failed to send message. Please email directly at hannah.pagade@gmail.com';
+            statusDiv.textContent = '✗ Failed to send message. Please email directly at hello@moonlstudios.com';
             statusDiv.className = 'form-status error';
             statusDiv.style.display = 'block';
         } finally {

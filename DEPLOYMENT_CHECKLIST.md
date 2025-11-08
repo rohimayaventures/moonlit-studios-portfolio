@@ -111,22 +111,9 @@ if (response.ok) {
 
 ---
 
-### 4. **Domain & DNS Setup** 🌐
-**Current:** Cloudflare Pages default domain
-**Goal:** Custom domain (moonlitstudios.com or similar)
-
-**Steps:**
-1. **Buy domain** (if not owned):
-   - Namecheap (~$10/year)
-   - Google Domains
-   - Cloudflare Registrar (cheapest)
-
-2. **Point to Cloudflare Pages:**
-   - Cloudflare Dashboard > Pages > Your Project > Custom Domains
-   - Add your domain
-   - Follow DNS instructions
-
-3. **SSL:** Automatic with Cloudflare (Free)
+### 2. Custom Domain
+**Domain:** https://moonlstudios.com
+**Action:** Add custom domain in Cloudflare Pages settings
 
 ---
 
