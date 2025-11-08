@@ -9,7 +9,7 @@ function animateCounters() {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
                 const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
+                const target = parseInt(counter.getAttribute('data-target') || counter.getAttribute('data-count'));
                 const duration = 2000; // 2 seconds
                 const increment = target / (duration / 16); // 60fps
                 let current = 0;

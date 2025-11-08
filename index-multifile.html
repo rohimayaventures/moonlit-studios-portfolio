@@ -3,60 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moonlit Studios | Hannah Pagade - Healthcare UI/UX Designer & Full-Stack Developer 🌙</title>
-    <meta name="description" content="Hannah Pagade - The CEO Who Codes. 15+ years healthcare operations leader turned UI/UX designer and full-stack developer. Where Healthcare Meets Creativity Meets Technology.">
-    <meta name="keywords" content="Healthcare UX, UI/UX Designer, Full-Stack Developer, Healthcare Operations, Hannah Pagade, Moonlit Studios, Healthcare Technology, AI/ML">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Hannah Pagade - The CEO Who Codes | Moonlit Studios">
-    <meta property="og:description" content="15+ years healthcare operations leader. UI/UX Designer. Full-Stack Developer. Where Healthcare Meets Creativity Meets Technology.">
+    <!-- PRIMARY META TAGS -->
+    <title>Hannah Pagade | The Nurse Who Can Code | Healthcare Web Developer Denver</title>
+    <meta name="title" content="Hannah Pagade | The Nurse Who Can Code | Healthcare Web Developer">
+    <meta name="description" content="Healthcare operations leader with 15+ years experience now building HIPAA-compliant web applications. Full-stack developer specializing in healthcare technology, patient portals, and medical practice websites in Denver, Colorado.">
+    <meta name="keywords" content="healthcare web developer Denver, medical website design Colorado, HIPAA compliant development, nurse developer, healthcare technology, patient portal development, medical practice websites, healthcare UI/UX, React developer healthcare, healthcare operations consultant">
+    <meta name="author" content="Hannah Pagade">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://moonlit-studios.pages.dev/">
+    
+    <!-- OPEN GRAPH / LINKEDIN -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moonlit-studios.pages.dev/">
+    <meta property="og:title" content="Hannah Pagade | The Nurse Who Can Code">
+    <meta property="og:description" content="15+ years healthcare operations → Full-stack developer building HIPAA-compliant applications. I understand healthcare because I lived it. Denver-based, available for projects nationwide.">
+    <meta property="og:image" content="https://moonlit-studios.pages.dev/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Moonlit Studios - Hannah Pagade">
     
-    <!-- Fonts -->
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- PRECONNECT FOR LIGHTNING SPEED -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- SCHEMA.ORG STRUCTURED DATA FOR GOOGLE RICH RESULTS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hannah Pagade",
+      "alternateName": "The Nurse Who Can Code",
+      "url": "https://moonlit-studios.pages.dev",
+      "image": "https://moonlit-studios.pages.dev/hannah-pagade.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/hannah-pagade"
+      ],
+      "jobTitle": "Full-Stack Developer & Healthcare Technology Consultant",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Moonlit Studios"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "University of Colorado Boulder"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westminster",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Healthcare Technology",
+        "Full-Stack Development",
+        "HIPAA Compliance",
+        "React",
+        "Node.js",
+        "Healthcare Operations",
+        "Patient Portal Development",
+        "Medical Website Design",
+        "Healthcare UI/UX",
+        "Customer Success Operations"
+      ],
+      "description": "Healthcare operations leader with 15+ years experience managing teams of 130+ and multimillion-dollar budgets. Now building HIPAA-compliant web applications and healthcare technology solutions. The Nurse Who Can Code."
+    }
+    </script>
+    
+    <!-- SERVICE SCHEMA FOR LOCAL SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Moonlit Studios",
+      "image": "https://moonlit-studios.pages.dev/logo.png",
+      "priceRange": "$2,500 - $10,000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westminster",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.8366",
+        "longitude": "-105.0372"
+      },
+      "url": "https://moonlit-studios.pages.dev",
+      "telephone": "+1-910-789-4647",
+      "email": "hannah@moonlitstudios.com",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/hannah-pagade"
+      ],
+      "description": "Professional web development and healthcare technology consulting services. Specializing in HIPAA-compliant applications, patient portals, and medical practice websites."
+    }
+    </script>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/peacock.css">
     <link rel="stylesheet" href="css/mobile.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero">
+        <canvas id="particles-canvas"></canvas>
         <div class="hero-content">
-            <p class="hero-subtitle">Moonlit Studios</p>
-            <h1 class="hero-title">
-                <span class="gradient-text">Strategic Design. Technical Excellence. Operational Precision.</span>
+            <h1 class="hero-heading">
+                <span class="name-text">Hannah Pagade</span>
+                <span class="tagline-container">
+                    <span class="static-part">The </span>
+                    <span class="typing-text" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </span>
             </h1>
-            <p class="hero-tagline">The Nurse Who Codes</p>
-            <p class="hero-description">
-                15 years healthcare operations leadership meets full-stack development and UI/UX design
-            </p>
+            <p class="hero-subtitle">Healthcare operations leader with 15+ years experience, now building digital solutions with modern full-stack skills</p>
             
-            <div class="stats-grid">
+            <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="15">0</span>
-                    <span class="stat-label">Years Healthcare</span>
+                    <span class="stat-number" data-count="15">0</span><span class="plus">+</span>
+                    <span class="stat-label">Years Healthcare Operations</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="130">0</span>
-                    <span class="stat-label">Team Size Led</span>
+                    <span class="stat-number" data-count="130">0</span><span class="plus">+</span>
+                    <span class="stat-label">Teams Successfully Led</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="6">0</span>
-                    <span class="stat-label">Businesses Built</span>
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Platforms Built & Deployed</span>
                 </div>
             </div>
             
-            <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work →</a>
-                <a href="#contact" class="btn btn-secondary">Book a Moonlit Meeting 🌙</a>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -401,5 +501,40 @@
     <script src="js/animations.js"></script>
     <script src="js/konami.js"></script>
     <script src="js/stats-counter.js"></script>
+    
+    <!-- Typing Effect -->
+    <script>
+    const phrases = ["Nurse Who Can Code", "Healthcare Developer", "Full-Stack Engineer"];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const typedElement = document.getElementById('typed-text');
+        if (!typedElement) return;
+        
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+            typedElement.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typedElement.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            setTimeout(() => { isDeleting = true; }, 2000);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+        
+        const speed = isDeleting ? 50 : 100;
+        setTimeout(typeEffect, speed);
+    }
+
+    document.addEventListener('DOMContentLoaded', typeEffect);
+    </script>
 </body>
 </html>
