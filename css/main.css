@@ -127,9 +127,32 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--midnight) 0%, var(--deep-ocean) 100%);
+    background: linear-gradient(135deg, #0A1128 0%, #1B4965 50%, #0A1128 100%);
     position: relative;
     overflow: hidden;
+}
+
+/* STARS BACKGROUND */
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 60px 70px, white, transparent),
+        radial-gradient(1px 1px at 50px 50px, white, transparent),
+        radial-gradient(1px 1px at 130px 80px, white, transparent),
+        radial-gradient(2px 2px at 90px 10px, white, transparent);
+    background-size: 200px 200px;
+    animation: stars 20s linear infinite;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@keyframes stars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
 }
 
 #particles-canvas {
@@ -139,6 +162,7 @@ img {
     width: 100%;
     height: 100%;
     opacity: 0.3;
+    z-index: 2;
 }
 
 .hero-content {
@@ -194,19 +218,18 @@ img {
 
 .name-text {
     display: block;
-    background: linear-gradient(135deg, var(--mermaid-teal), var(--starlight));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #FFD700;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
 .tagline-container {
     display: block;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
-    color: var(--mermaid-teal);
+    color: #4A9B9B;
     font-weight: 600;
     min-height: 1.5em;
+    text-shadow: 0 0 20px rgba(74, 155, 155, 0.5);
 }
 
 .static-part {
@@ -228,13 +251,13 @@ img {
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    margin-bottom: 3rem;
-    opacity: 0.95;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: #E8E8E8 !important;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Stats Grid */
@@ -266,13 +289,12 @@ img {
 
 .stat-label {
     font-size: 0.9rem;
+    color: #FAFAFA !important;
     opacity: 0.9;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
     margin-top: 0.5rem;
-    margin-top: 0.5rem;
-    display: block;
 }
 
 /* Buttons */
@@ -1580,4 +1602,26 @@ html {
         text-shadow: none !important;
         transition: none !important;
     }
+}
+
+/* ========================================
+   EPIC STARDUST CURSOR TRAIL
+   ======================================== */
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, #FFD700, #4A9B9B);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    animation: fade 0.5s ease-out;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+@keyframes fade {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0); }
 }

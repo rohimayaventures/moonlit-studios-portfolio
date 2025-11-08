@@ -964,5 +964,21 @@
 
     document.addEventListener('DOMContentLoaded', typeEffect);
     </script>
+    
+    <!-- EPIC STARDUST CURSOR TRAIL -->
+    <script>
+    // STARDUST CURSOR TRAIL
+    document.addEventListener('mousemove', function(e) {
+        const star = document.createElement('div');
+        star.className = 'cursor-dot';
+        star.style.left = e.clientX + 'px';
+        star.style.top = e.clientY + 'px';
+        document.body.appendChild(star);
+        
+        setTimeout(() => {
+            star.remove();
+        }, 500);
+    });
+    </script>
 </body>
 </html>
