@@ -4,15 +4,21 @@
    ======================================== */
 
 :root {
-    /* Moonlit Studios Color Palette - Moon, Ocean, Mermaid Theme */
+    /* Healthcare Tech Color Palette - Medical Trust + Innovation */
     --midnight: #0A1128;
     --deep-ocean: #1B4965;
-    --mermaid-teal: #4A9B9B;
+    --medical-teal: #00B8A9;
+    --trust-blue: #2E5EAA;
+    --healing-cyan: #5CE1E6;
+    --vital-red: #FF6B6B;
+    --medical-white: #FFFFFF;
     --lunar-gold: #FFD700;
     --moonlight-silver: #E8E8E8;
     --pearl-white: #FAFAFA;
     --starlight: #CAE9FF;
-    --white: #FFFFFF;
+    --mermaid-teal: #00B8A9;
+    --health-green: #06D6A0;
+    --pulse-glow: rgba(0, 184, 169, 0.4);
 }
 
 * {
@@ -50,12 +56,12 @@ html {
 
 /* Focus indicators for keyboard navigation */
 *:focus {
-    outline: 3px solid #4A9B9B;
+    outline: 3px solid #00B8A9;
     outline-offset: 2px;
 }
 
 a:focus, button:focus {
-    outline: 3px solid #4A9B9B;
+    outline: 3px solid #00B8A9;
     outline-offset: 2px;
 }
 
@@ -130,9 +136,10 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 17, 40, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(74, 155, 155, 0.3);
+    background: rgba(13, 27, 42, 0.97);
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid rgba(0, 184, 169, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 184, 169, 0.15);
     z-index: 1000;
     padding: 1rem 0;
 }
@@ -168,7 +175,7 @@ img {
 
 .brand-tagline {
     font-size: 0.75rem;
-    color: #4A9B9B;
+    color: #00B8A9;
     font-weight: 600;
 }
 
@@ -179,12 +186,13 @@ img {
 }
 
 .nav-link {
-    color: #FAFAFA;
+    color: #FFFFFF;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     transition: all 0.3s ease;
     position: relative;
+    letter-spacing: 0.5px;
 }
 
 .nav-link::after {
@@ -193,13 +201,15 @@ img {
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #4A9B9B, #FFD700);
+    height: 3px;
+    background: linear-gradient(90deg, #00B8A9, #5CE1E6);
     transition: width 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 184, 169, 0.6);
 }
 
 .nav-link:hover {
-    color: #4A9B9B;
+    color: #5CE1E6;
+    text-shadow: 0 0 10px rgba(92, 225, 230, 0.5);
 }
 
 .nav-link:hover::after {
@@ -207,54 +217,87 @@ img {
 }
 
 .nav-cta {
-    background: linear-gradient(135deg, #4A9B9B, #1B4965);
+    background: linear-gradient(135deg, #00B8A9 0%, #2E5EAA 100%);
     color: #FFFFFF !important;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(74, 155, 155, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 184, 169, 0.5);
+    letter-spacing: 0.5px;
 }
 
 .nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(74, 155, 155, 0.6);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 184, 169, 0.8);
+    background: linear-gradient(135deg, #06D6A0 0%, #00B8A9 100%);
 }
 
-/* Hero Section - Adjusted for fixed nav */
+/* Hero Section - Healthcare Tech Inspired */
 .hero {
     margin-top: 80px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0A1128 0%, #1B4965 50%, #0A1128 100%);
+    background: 
+        linear-gradient(135deg, 
+            #0D1B2A 0%, 
+            #1B3A4B 25%,
+            #2E5EAA 50%,
+            #1B3A4B 75%,
+            #0D1B2A 100%
+        );
     position: relative;
     overflow: hidden;
 }
 
-/* STARS BACKGROUND */
+/* MEDICAL HEARTBEAT GRID BACKGROUND */
 .hero::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: 
-        radial-gradient(2px 2px at 20px 30px, white, transparent),
-        radial-gradient(2px 2px at 60px 70px, white, transparent),
-        radial-gradient(1px 1px at 50px 50px, white, transparent),
-        radial-gradient(1px 1px at 130px 80px, white, transparent),
-        radial-gradient(2px 2px at 90px 10px, white, transparent);
-    background-size: 200px 200px;
-    animation: stars 20s linear infinite;
-    opacity: 0.5;
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 184, 169, 0.03) 0px,
+            transparent 1px,
+            transparent 40px,
+            rgba(0, 184, 169, 0.03) 41px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(0, 184, 169, 0.03) 0px,
+            transparent 1px,
+            transparent 40px,
+            rgba(0, 184, 169, 0.03) 41px
+        );
     z-index: 1;
+    opacity: 0.4;
 }
 
-@keyframes stars {
-    from { transform: translateY(0); }
-    to { transform: translateY(-200px); }
+/* FLOATING MEDICAL CROSSES PATTERN */
+.hero::after {
+    content: '✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    font-size: 2rem;
+    color: rgba(92, 225, 230, 0.08);
+    letter-spacing: 80px;
+    line-height: 100px;
+    animation: floatCrosses 30s linear infinite;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@keyframes floatCrosses {
+    from { transform: translateX(0) translateY(0); }
+    to { transform: translateX(100px) translateY(-100px); }
 }
 
 #particles-canvas {
@@ -275,76 +318,117 @@ img {
     max-width: 1200px;
 }
 
-/* Availability Badge */
+/* Availability Badge - Medical Pulse */
 .availability-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(74, 155, 155, 0.15);
-    border: 2px solid var(--mermaid-teal);
-    color: var(--starlight);
+    background: rgba(0, 184, 169, 0.2);
+    border: 2px solid var(--medical-teal);
+    color: var(--medical-white);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 20px rgba(0, 184, 169, 0.3);
+    animation: badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { 
+        box-shadow: 0 0 20px rgba(0, 184, 169, 0.3);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(0, 184, 169, 0.6);
+    }
 }
 
 .status-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--mermaid-teal);
+    width: 10px;
+    height: 10px;
+    background: var(--health-green);
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(6, 214, 160, 0.8);
 }
 
-@keyframes pulse {
+@keyframes heartbeat {
     0%, 100% { 
-        opacity: 1; 
+        transform: scale(1);
+        opacity: 1;
+    }
+    10% { 
+        transform: scale(1.3);
+    }
+    20% { 
         transform: scale(1);
     }
-    50% { 
-        opacity: 0.6;
-        transform: scale(1.1);
+    30% { 
+        transform: scale(1.3);
+    }
+    40% { 
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
 .hero-heading {
     font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 2rem;
-    line-height: 1.3;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .name-text {
     display: block;
-    color: #FFD700;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.5rem;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    text-shadow: none;
+    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.4));
+    animation: nameGlow 3s ease-in-out infinite;
+}
+
+@keyframes nameGlow {
+    0%, 100% { 
+        filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.4));
+    }
+    50% { 
+        filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.7));
+    }
 }
 
 .tagline-container {
     display: block;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
-    color: #4A9B9B;
-    font-weight: 600;
+    font-weight: 700;
     min-height: 1.5em;
-    text-shadow: 0 0 20px rgba(74, 155, 155, 0.5);
+    letter-spacing: -0.01em;
 }
 
 .static-part {
-    color: var(--moonlight-silver);
+    color: #FFFFFF;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .typing-text {
-    color: var(--mermaid-teal);
+    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(0, 184, 169, 0.5));
 }
 
 .cursor {
-    color: var(--lunar-gold);
+    color: var(--health-green);
     animation: blink 1s infinite;
+    text-shadow: 0 0 10px rgba(6, 214, 160, 0.8);
 }
 
 @keyframes blink {
@@ -354,49 +438,92 @@ img {
 
 .hero-subtitle {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
-    color: #E8E8E8 !important;
-    font-weight: 500;
-    line-height: 1.8;
-    max-width: 700px;
+    color: #FFFFFF !important;
+    font-weight: 600;
+    line-height: 1.9;
+    max-width: 750px;
     margin: 0 auto 3rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.02em;
 }
 
-/* Stats Grid */
+/* Stats Grid - Medical Dashboard Style */
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
     margin: 3rem auto;
-    max-width: 800px;
+    max-width: 900px;
+    padding: 2rem;
+    background: rgba(0, 184, 169, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 184, 169, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .stat-item {
     text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(92, 225, 230, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--medical-teal), transparent);
+    animation: scanLine 3s linear infinite;
+}
+
+@keyframes scanLine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 184, 169, 0.15);
+    border-color: var(--medical-teal);
+    box-shadow: 0 10px 30px rgba(0, 184, 169, 0.3);
 }
 
 .stat-number {
     font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--mermaid-teal);
+    font-weight: 900;
+    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     display: inline;
-    text-shadow: 0 2px 10px rgba(74, 155, 155, 0.3);
+    filter: drop-shadow(0 2px 10px rgba(0, 184, 169, 0.5));
 }
 
 .plus {
     font-size: 2rem;
-    color: var(--mermaid-teal);
-    font-weight: 800;
+    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
 }
 
 .stat-label {
-    font-size: 0.9rem;
-    color: #FAFAFA !important;
-    opacity: 0.9;
+    font-size: 0.85rem;
+    color: #FFFFFF !important;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
+    line-height: 1.4;
 }
 
 /* Buttons */
@@ -457,34 +584,54 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #4A9B9B, #1B4965);
+    background: linear-gradient(135deg, #00B8A9 0%, #2E5EAA 100%);
     color: #FFFFFF !important;
-    box-shadow: 0 6px 20px rgba(74, 155, 155, 0.5);
+    box-shadow: 
+        0 6px 25px rgba(0, 184, 169, 0.6),
+        0 0 0 0 rgba(0, 184, 169, 0.7);
     border: 3px solid transparent;
+    animation: buttonPulse 2s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 6px 25px rgba(0, 184, 169, 0.6),
+            0 0 0 0 rgba(0, 184, 169, 0.7);
+    }
+    50% {
+        box-shadow: 
+            0 8px 30px rgba(0, 184, 169, 0.8),
+            0 0 0 10px rgba(0, 184, 169, 0);
+    }
 }
 
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 40px rgba(74, 155, 155, 0.7);
-    background: linear-gradient(135deg, #FFD700, #4A9B9B);
+    box-shadow: 0 12px 45px rgba(0, 184, 169, 0.9);
+    background: linear-gradient(135deg, #06D6A0 0%, #00B8A9 100%);
+    animation: none;
 }
 
 .btn-secondary {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.05);
     color: #FFFFFF !important;
-    border: 3px solid #4A9B9B;
-    box-shadow: 0 6px 20px rgba(74, 155, 155, 0.3);
+    border: 3px solid #00B8A9;
+    box-shadow: 
+        0 6px 20px rgba(0, 184, 169, 0.3),
+        inset 0 0 20px rgba(0, 184, 169, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, #4A9B9B, #FFD700);
-    border-color: #FFD700;
-    color: #0A1128 !important;
+    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    border-color: #5CE1E6;
+    color: #0D1B2A !important;
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 40px rgba(255, 215, 0, 0.7);
+    box-shadow: 0 12px 45px rgba(92, 225, 230, 0.8);
 }
 
-/* Scroll Indicator */
+/* Scroll Indicator - Medical Pulse Style */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -494,34 +641,38 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    opacity: 0.7;
     animation: bounce 2s infinite;
 }
 
 .scroll-indicator span {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(0, 184, 169, 0.6);
 }
 
 .mouse {
-    width: 24px;
-    height: 38px;
-    border: 2px solid var(--starlight);
-    border-radius: 12px;
+    width: 26px;
+    height: 40px;
+    border: 3px solid var(--medical-teal);
+    border-radius: 13px;
     position: relative;
+    box-shadow: 0 0 15px rgba(0, 184, 169, 0.5);
 }
 
 .wheel {
-    width: 4px;
-    height: 8px;
-    background: var(--starlight);
-    border-radius: 2px;
+    width: 5px;
+    height: 10px;
+    background: var(--health-green);
+    border-radius: 3px;
     position: absolute;
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
     animation: scroll 2s infinite;
+    box-shadow: 0 0 8px rgba(6, 214, 160, 0.9);
 }
 
 @keyframes bounce {
@@ -555,34 +706,53 @@ section {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 3rem;
     text-align: center;
-    color: #0A1128;
-    font-weight: 800;
+    color: #0D1B2A;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--medical-teal), transparent);
+    border-radius: 2px;
 }
 
 .section-intro {
     text-align: center;
-    color: #1B4965;
-    font-size: 1.2rem;
+    color: #1B3A4B;
+    font-size: 1.25rem;
     margin-bottom: 4rem;
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 1.8;
 }
 
 section h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
     text-align: center;
-    color: #0A1128;
-    font-weight: 700;
+    color: #0D1B2A;
+    font-weight: 900;
+    letter-spacing: -0.01em;
 }
 
 .section-subtitle {
     text-align: center;
-    color: #1B4965;
-    font-size: 1.2rem;
+    color: #1B3A4B;
+    font-size: 1.25rem;
     margin-bottom: 3rem;
+    font-weight: 600;
+    line-height: 1.7;
     font-weight: 600;
 }
 
@@ -1070,7 +1240,7 @@ section h2 {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #FFD700, #4A9B9B, #FFD700);
+    background: linear-gradient(90deg, #FFD700, #00B8A9, #FFD700);
 }
 
 .footer-content {
@@ -1101,7 +1271,7 @@ section h2 {
 
 .footer-tagline {
     font-size: 1.25rem;
-    color: #4A9B9B;
+    color: #00B8A9;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -1138,7 +1308,7 @@ section h2 {
 }
 
 .footer-section a:hover {
-    color: #4A9B9B;
+    color: #00B8A9;
     padding-left: 5px;
 }
 
@@ -1158,13 +1328,13 @@ section h2 {
 }
 
 .footer-contact a {
-    color: #4A9B9B;
+    color: #00B8A9;
     font-weight: 600;
 }
 
 .availability {
     background: rgba(74, 155, 155, 0.2);
-    border: 2px solid #4A9B9B;
+    border: 2px solid #00B8A9;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     text-align: center;
@@ -1181,7 +1351,7 @@ section h2 {
 .footer-gradient-line {
     width: 100px;
     height: 3px;
-    background: linear-gradient(90deg, #4A9B9B, #FFD700);
+    background: linear-gradient(90deg, #00B8A9, #FFD700);
     margin: 0 auto 1.5rem;
 }
 
@@ -1191,7 +1361,7 @@ section h2 {
 }
 
 .footer-subtitle {
-    color: #4A9B9B;
+    color: #00B8A9;
     font-size: 0.875rem;
 }
 
@@ -2049,7 +2219,7 @@ html {
 .cursor-dot {
     width: 8px;
     height: 8px;
-    background: linear-gradient(135deg, #FFD700, #4A9B9B);
+    background: linear-gradient(135deg, #FFD700, #00B8A9);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
