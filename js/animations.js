@@ -65,7 +65,7 @@ function initCardEffects() {
     });
 }
 
-// Professional Golden Moon Cursor
+// Crescent Moon Cursor with Stardust Trail
 function initMoonCursor() {
     // Create moon cursor element
     const moon = document.createElement('div');
@@ -76,13 +76,39 @@ function initMoonCursor() {
     let mouseY = 0;
     let moonX = 0;
     let moonY = 0;
+    let lastStardustTime = 0;
     
     // Track mouse position
     document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
-        moon.style.opacity = '0.8';
+        moon.style.opacity = '0.95';
+        
+        // Create stardust trail particles
+        const now = Date.now();
+        if (now - lastStardustTime > 50) { // Create particle every 50ms
+            createStardust(e.clientX, e.clientY);
+            lastStardustTime = now;
+        }
     });
+    
+    // Create stardust particle
+    function createStardust(x, y) {
+        const stardust = document.createElement('div');
+        stardust.className = Math.random() > 0.7 ? 'stardust sparkle' : 'stardust';
+        
+        // Random offset from cursor
+        const offsetX = (Math.random() - 0.5) * 20;
+        const offsetY = (Math.random() - 0.5) * 20;
+        
+        stardust.style.left = (x + offsetX) + 'px';
+        stardust.style.top = (y + offsetY) + 'px';
+        
+        document.body.appendChild(stardust);
+        
+        // Remove after animation completes
+        setTimeout(() => stardust.remove(), 1000);
+    }
     
     // Smooth follow animation
     function animateMoon() {
@@ -116,7 +142,7 @@ function initMoonCursor() {
         moon.style.opacity = '0';
     });
     
-    console.log('🌙 Professional moon cursor activated');
+    console.log('🌙✨ Crescent moon cursor with stardust trail activated');
 }
 
 // Particle Canvas for Hero Section

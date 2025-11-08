@@ -24,8 +24,8 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--pearl-white);
-    color: var(--midnight);
+    background: #FFFFFF;
+    color: #0A1128;
     line-height: 1.6;
     overflow-x: hidden;
     font-weight: 400;
@@ -33,8 +33,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Crimson Text', serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.5px;
+    color: #0A1128;
+}
+
+p {
+    color: #1B4965;
+    line-height: 1.7;
 }
 
 /* Hero Section */
@@ -279,33 +285,35 @@ section {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 3rem;
     text-align: center;
-    color: var(--deep-ocean);
-    font-weight: 700;
+    color: #0A1128;
+    font-weight: 800;
 }
 
 .section-intro {
     text-align: center;
-    color: #666;
+    color: #1B4965;
     font-size: 1.2rem;
     margin-bottom: 4rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 500;
 }
 
 section h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--deep-ocean);
+    color: #0A1128;
+    font-weight: 700;
 }
 
 .section-subtitle {
     text-align: center;
-    color: var(--mermaid-teal);
+    color: #1B4965;
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .bg-alternate {
@@ -360,7 +368,7 @@ section h2 {
 }
 
 .trifecta-card p {
-    color: #666;
+    color: #1B4965;
     line-height: 1.7;
 }
 
@@ -419,7 +427,7 @@ section h2 {
 }
 
 .service-card p {
-    color: #666;
+    color: #1B4965;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -431,7 +439,7 @@ section h2 {
 
 .service-card li {
     padding: 0.5rem 0;
-    color: #555;
+    color: #1B4965;
 }
 
 /* Portfolio Grid */
@@ -478,7 +486,7 @@ section h2 {
 }
 
 .project-content p {
-    color: #666;
+    color: #1B4965;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -504,8 +512,8 @@ section h2 {
     padding: 6rem 2rem;
 }
 
-.section-title { text-align: center; font-size: 3rem; margin-bottom: 0.5rem; }
-.section-intro { text-align: center; color: #666; margin-bottom: 2.5rem; font-size: 1.1rem; }
+.section-title { text-align: center; font-size: 3rem; margin-bottom: 0.5rem; color: #0A1128; font-weight: 800; }
+.section-intro { text-align: center; color: #1B4965; margin-bottom: 2.5rem; font-size: 1.1rem; font-weight: 500; }
 
 .portfolio-controls { display:flex; justify-content:center; margin-bottom: 1.5rem; }
 .filter-buttons { display:flex; gap:0.75rem; }
@@ -516,7 +524,7 @@ section h2 {
     border-radius: 999px;
     cursor: pointer;
     font-weight: 700;
-    color: #444;
+    color: #0A1128;
     transition: all 0.25s ease;
 }
 .filter-btn.active, .filter-btn:hover { background: var(--gold); color: var(--black); border-color: var(--gold); transform: translateY(-3px); }
@@ -646,14 +654,14 @@ footer a:hover {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.95rem;
-    color: #666;
+    color: #1B4965;
     font-style: italic;
 }
 
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: #1B4965;
     margin-bottom: 1.5rem;
 }
 
@@ -716,7 +724,7 @@ footer a:hover {
 }
 
 .value-card p {
-    color: #666;
+    color: #1B4965;
     line-height: 1.7;
 }
 
@@ -848,7 +856,7 @@ footer a:hover {
 }
 
 .service-description {
-    color: #555;
+    color: #1B4965;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
@@ -888,7 +896,7 @@ footer a:hover {
 
 .service-features li {
     padding: 0.6rem 0;
-    color: #444;
+    color: #0A1128;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -970,7 +978,7 @@ footer a:hover {
 }
 
 .contact-info > p {
-    color: #666;
+    color: #1B4965;
     line-height: 1.8;
     margin-bottom: 2rem;
     font-size: 1.1rem;
